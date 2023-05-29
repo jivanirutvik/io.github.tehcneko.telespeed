@@ -51,9 +51,9 @@ public class SpeedHook implements IXposedHookLoadPackage, IXposedHookZygoteInit 
                         maxDownloadRequests = 8;
                         maxDownloadRequestsBig = 8;
                     } else if (BOOST_EXTREME.equals(speed)) {
-                        downloadChunkSizeBig = 1024 * 1024;
-                        maxDownloadRequests = 12;
-                        maxDownloadRequestsBig = 12;
+                        downloadChunkSizeBig = 1024 * 1024 * 1024;
+                        maxDownloadRequests = 30;
+                        maxDownloadRequestsBig = 30;
                     } else {
                         downloadChunkSizeBig = 1024 * 128;
                         maxDownloadRequests = 4;
